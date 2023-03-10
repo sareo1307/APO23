@@ -1,0 +1,32 @@
+
+public class Ejercicio1 {
+	
+	public static void main(String[] args) {
+		
+		String string1 ="ABC";
+		String string2 = new String("ABC");
+		String string3 = "AB" + "C";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

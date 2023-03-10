@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	static Scanner sn = new Scanner(System.in);
+	
+public static void main(String[] args) {
+		
+	boolean salir = false;
+	 int opcion =0;
+
+	  Ejercicio1 eu = new Ejercicio1();    
+	  Ejercicio2 ed = new Ejercicio2();   
+	  Ejercicio3 et = new Ejercicio3 ();
+
+
+	while (!salir) {
+
+	 System.out.println("1. Opcion 1");
+	 System.out.println("2. Opcion 2");
+	 System.out.println("3. Opcion 3");
+     System.out.println("4. Salir");
+
+	    		opcion = sn.nextInt();
+
+	    switch (opcion) {
+	   case 1:
+
+	    	 System.out.println("Has seleccionado la opcion 1" );
+	    	 eu.main(args);
+	    	 break;
+	    	 
+	   case 2:
+		   
+	    	 System.out.println("Has seleccionado la opcion 2");
+	    	 ed.main(args);
+	    	 break;
+	    	 
+	   case 3:
+		   
+	    	 System.out.println("Has seleccionado la opcion 3" );
+	    	 et.main(args);
+	    	 break;
+	   case 4:
+		   
+	    	 System.out.println("Has seleccionado la opcion 4");
+	    	 break;
+	   default:
+		   
+	    	 System.out.println("Solo números entre 1 y 3");
+	    	 
+   } 
+  }	
+ }
+}

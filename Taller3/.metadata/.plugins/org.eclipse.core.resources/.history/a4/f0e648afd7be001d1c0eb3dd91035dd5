@@ -1,0 +1,16 @@
+
+public class Ejercicio3 {
+	
+	String nombre;
+	
+	String apellido;
+	
+	public void mostrarinformacion() {
+	
+	System.out.println("Nombre" + nombre);
+	
+	System.out.println("Apellido" + apellido);
+	
+	
+ }
+}
