@@ -1,0 +1,47 @@
+package poo;
+
+public class UsoCoche {
+
+	public static void main(String[] args) {
+		
+		Coche Renault = new Coche();
+		
+		System.out.println(Renault.dime_ruedas());
+		
+		System.out.println(Renault.dime_largo());
+		
+		System.out.println(Renault.dime_ancho());
+		
+		System.out.println(Renault.dime_motor());
+		
+		System.out.println(Renault.dime_peso_plataforma());
+		
+		System.out.println(Renault.dime_color());
+		
+		System.out.println(Renault.dime_largo());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

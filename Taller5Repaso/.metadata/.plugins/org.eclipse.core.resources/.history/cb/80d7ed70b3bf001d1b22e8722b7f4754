@@ -1,0 +1,28 @@
+package poo;
+
+public class Coche {
+	
+	private int ruedas;
+	
+	int largo;
+	
+	int ancho;
+	
+	int motor;
+	
+	int peso;
+	
+	public Coche() {
+		
+		ruedas = 4;
+		
+		largo = 5000;
+		
+		ancho = 2000;
+		
+		motor = 2400;
+		
+		peso = 700;
+		
+	}
+}

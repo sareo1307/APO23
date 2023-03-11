@@ -1,0 +1,40 @@
+package poo;
+
+public class Coche {
+	
+	private int ruedas;
+	
+	private int largo;
+	
+	private int ancho;
+	
+	private int motor;
+	
+	private int peso;
+	
+	public Coche() {
+		
+		ruedas = 4;
+		
+		largo = 5000;
+		
+		ancho = 2000;
+		
+		motor = 2400;
+		
+		peso = 700;
+		
+	}
+	
+	public String dime_largo() {
+	
+		return "El largo del coche es" + largo;
+		
+		
+		
+		
+		
+		
+		
+ }
+}

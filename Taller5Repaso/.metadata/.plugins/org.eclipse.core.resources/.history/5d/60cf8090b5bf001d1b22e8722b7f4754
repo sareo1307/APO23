@@ -1,0 +1,31 @@
+package poo;
+
+public class UsoCoche {
+
+	public static void main(String[] args) {
+		
+		Coche Renault = new Coche();
+		
+		System.out.println(Renault.dime_largo());
+		
+		System.out.println("Este coche tiene" + Renault.ruedas + "ruedas");
+		
+		System.out.println("Este coche tiene" + Renault.largo + "cm de largo");
+		
+		System.out.println("Este coche tiene" + Renault.ancho + "cm de ancho");
+		
+		System.out.println("Este coche tiene un" + Renault.motor + "cc de motor");
+		
+		System.out.println("Este coche tiene" + Renault.peso + "kg de peso");
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

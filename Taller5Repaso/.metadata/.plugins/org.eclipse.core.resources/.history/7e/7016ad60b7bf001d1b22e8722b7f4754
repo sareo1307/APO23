@@ -1,0 +1,72 @@
+package poo;
+
+public class Coche {
+	
+	private int ruedas;
+	
+	private int largo;
+	
+	private int ancho;
+	
+	private int motor;
+	
+	private int peso_plataforma;
+	
+	String color;
+	
+	int peso_total;
+	
+	boolean asientos_cuero, climatizador;
+	
+	public Coche() {
+		
+		ruedas = 4;
+		
+		largo = 5000;
+		
+		ancho = 2000;
+		
+		motor = 2400;
+		
+		peso_plataforma = 700;
+		
+	}
+	public String dime_ruedas() {
+		
+		return "El coche tiene " + ruedas;
+			
+ }
+	public String dime_largo() {
+	
+		return "El largo del coche es " + largo;
+			
+ }
+	public String dime_ancho() {
+		
+		return "El ancho del coche es " + ancho;
+			
+ }
+	public String dime_motor() {
+		
+		return "El motor del coche es " + motor;
+			
+ }
+	public String dime_peso_plataforma() {//GETTER
+		
+		return "El peso de la plataforma del coche es " + peso_plataforma;
+			
+ }
+	
+	public void establecer_color () {//SETTER
+		
+		color = "azul";
+
+ }
+	
+	public String dime_color() {
+		
+		return "El color del coche es " + color;
+		
+ }
+	
+}

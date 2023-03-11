@@ -1,0 +1,44 @@
+package poo;
+
+public class Coche {
+	
+	int ruedas;
+	
+	int largo;
+	
+	int ancho;
+	
+	int motor;
+	
+	int peso;
+	
+	public Coche() {
+		
+		ruedas = 4;
+		
+		largo = 5000;
+		
+		ancho = 2000;
+		
+		motor = 2400;
+		
+		peso = 700;
+		
+	}
+	
+	public static void main(String[]args) {
+		
+Coche Renault = new Coche();
+		
+		System.out.println("Este coche tiene" + Renault.ruedas + "ruedas");
+		
+		System.out.println("Este coche tiene" + Renault.largo + "cm de largo");
+		
+		System.out.println("Este coche tiene" + Renault.ancho + "cm de ancho");
+		
+		System.out.println("Este coche tiene un" + Renault.motor + "cc de motor");
+		
+		System.out.println("Este coche tiene" + Renault.peso + "kg de peso");
+		
+	}
+}

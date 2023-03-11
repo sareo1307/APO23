@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\sareo\OneDrive\Documentos\Taller5Repaso\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2461555211.index
+4269123271.index
