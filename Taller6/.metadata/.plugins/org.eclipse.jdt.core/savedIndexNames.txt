@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\estudiante\Documents\Taller6\.metadata\.plugins\org.eclipse.jdt.core
+3255074154.index
+1865797976.index

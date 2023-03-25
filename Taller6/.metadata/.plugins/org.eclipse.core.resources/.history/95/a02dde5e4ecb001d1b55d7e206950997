@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class PuntoDos {
+	
+static Scanner sn = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+	
+	float[][] precio;
+	
+	precio = new float [10][3];
+	
+	char[][] sentencia = new char[10][3];
+	
+for(float i = 0; i < precio.length; i++){
+		
+	for(float j = 0; j < precio.length; j++){
+			
+	System.out.println("valor para fila " + i + ", valor para columna " + j);
+		
+	
+   }
+  }
+ }
+}

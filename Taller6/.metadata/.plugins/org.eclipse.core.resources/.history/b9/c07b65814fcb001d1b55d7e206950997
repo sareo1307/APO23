@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PuntoTres {
+	
+static Scanner sn = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		long [][] array1 = new long[4][3];
+		
+		array1[0][0] = 5;
+		array1[0][1] = 5;
+		array1[1][0] = 5;
+		array1[1][1] = 5;
+		array1[2][0] = 5;
+		array1[2][1] = 5;
+		
+	for (int i = 0; i < array1.length; i++){
+			
+	System.out.println(array1[i]);
+  }
+ }
+}

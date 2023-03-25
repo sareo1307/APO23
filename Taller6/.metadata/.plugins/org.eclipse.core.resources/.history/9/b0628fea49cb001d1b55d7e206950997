@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class PuntoUno {
+	
+	static Scanner sn = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+	
+	int[] numeros = new int [9];
+ 
+	for (int i = 0; i < 9; i++){
+			
+	System.out.println(numeros[i]);
+	
+	}
+	
+	for (int variable : numeros){
+		System.out.println(variable);
+		}
+ }	
+}

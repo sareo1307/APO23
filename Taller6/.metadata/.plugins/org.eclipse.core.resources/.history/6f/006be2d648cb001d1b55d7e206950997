@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class PuntoTres {
+	
+static Scanner sn = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		long[][] array;
+		
+		long [][] array = new long[4][3];
+		
+		for(long i = 0; i < array; i++){
+			
+			for(long j = 0; j < array[i].length; j++){
+				
+			System.out.println("valor fila " + i + ", valor columna " + j);
+			
+			array[i][j] = in.nextInt();
+			
+			}//end for
+			}
+	}
+
+}

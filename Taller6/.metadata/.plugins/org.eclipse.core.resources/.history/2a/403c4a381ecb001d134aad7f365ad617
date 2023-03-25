@@ -1,0 +1,20 @@
+
+public class PuntoUno {
+	
+	public int variable = 0;
+	
+	int[] numeros; 
+	
+	numeros = new int [9];
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
