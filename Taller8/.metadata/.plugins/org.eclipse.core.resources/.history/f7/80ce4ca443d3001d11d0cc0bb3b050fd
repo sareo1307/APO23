@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+import PuntoSiete.Card;
+public class PuntoOcho{
+public class Main {
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        int totalPoints = 0;
+        int cardsDrawn = 0;
+        
+        // Draw two cards
+        Card[] hand = new Card[5];
+        for (int i = 0; i < 2; i++) {
+            int suitNumber = (int)(Math.random() * 4.0 + 1);
+            int faceNumber = (int)(Math.random() * 13.0 + 1);
+            Card newCard = new Card(suitNumber, faceNumber);
+            hand[cardsDrawn] = newCard;
+            cardsDrawn++;
+            totalPoints += newCard.points;
+            System.out.println("You drew " + newCard + " (" + newCard.points + " points)");
+        }
+        System.out.println("Total points: " + totalPoints);
+        
+        // Draw additional cards until total points reach 21 or user decides to stop or hand has 5 cards
+        while (totalPoints < 21 && cardsDrawn < 5) {
+            System.out.print("Do you want another card? (Y/N): ");
+            String answer = scanner.nextLine();
+            if (answer.equalsIgnoreCase("Y")) {
+                int suitNumber = (int)(Math.random() * 4.0 + 1);
+                int faceNumber = (int)(Math.random() * 13.0 + 1);
+                Card newCard = new Card(suitNumber, faceNumber);
+                hand[cardsDrawn] = newCard;
+                cardsDrawn++;
+                totalPoints += newCard.points;
+                System.out.println("You drew " + newCard + " (" + newCard.points + " points)");
+                System.out.println("Total points: " + totalPoints);
+            } else {
+                break;
+            }
+        }
+        
+        // Determine if user won or lost
+        if (totalPoints == 21) {
+            System.out.println("Congratulations, you won!");
+        } else if (totalPoints > 21) {
+            System.out.println("Sorry, you lost!");
+        } else {
+            System.out.println("You decided to stop.");
+        }
+        
+        // Display the final hand
+        System.out.println("Final hand:");
+        for (int i = 0; i < cardsDrawn; i++) {
+            System.out.println(hand[i]);
+        }
+    }
+}
+}
