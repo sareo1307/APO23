@@ -1,0 +1,43 @@
+package poo;
+
+import javax.swing.*;
+
+public class UsoVehiculo {
+
+public static void main(String[] args) {
+		
+	Coche micoche = new Coche();
+	
+	micoche.establecer_color(JOptionPane.showInputDialog("Introduce color"));
+	
+	System.out.println(micoche.dime_datos_generales());
+	
+	System.out.println(micoche.dime_color());
+	
+	micoche.configurar_asientos(JOptionPane.showInputDialog("¿Tiene asientos de cuero?"));
+	
+	System.out.println(micoche.dime_asientos());
+	
+	micoche.configura_climatizador(JOptionPane.showInputDialog("¿Tiene climatizador?"));
+	
+	System.out.println(micoche.dime_climatizador());
+	
+	System.out.println(micoche.dime_peso_total());
+	
+	System.out.println("El precio final del cohce es: "micoche.precio_coche());
+	
+	
+	
+	Renault.establecer_color("verde");
+		
+	System.out.println(Renault.dime_color());
+		
+	Renault.configurar_asientos("si");
+		
+	System.out.println(Renault.dime_asientos());
+		
+	System.out.println(Renault.dime_peso_total());
+
+ }
+
+}

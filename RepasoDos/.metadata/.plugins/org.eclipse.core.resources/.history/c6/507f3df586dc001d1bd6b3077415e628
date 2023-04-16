@@ -1,0 +1,58 @@
+package poo;
+
+public class UsoVehiculo {
+
+public static void main(String[] args) {
+		
+	Coche micoche1 = new Coche();
+	
+	micoche1.establecer_color("Rojo");
+	
+	Furgoneta mifurgoneta1 = new Furgoneta(7, 580);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ }
+}

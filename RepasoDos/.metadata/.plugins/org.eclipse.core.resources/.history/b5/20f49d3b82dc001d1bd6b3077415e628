@@ -1,0 +1,29 @@
+package poo;
+
+import javax.swing.*;
+
+public class UsoVehiculo {
+
+public static void main(String[] args) {
+		
+	Coche micoche = new Coche();
+	
+	micoche.establecer_color(JOptionPane.showInputDialog("Introduce color"));
+	
+	System.out.println(micoche.dime_datos_generales());
+	
+	System.out.println(micoche.dime_color());
+		
+	Renault.establecer_color("verde");
+		
+	System.out.println(Renault.dime_color());
+		
+	Renault.configurar_asientos("si");
+		
+	System.out.println(Renault.dime_asientos());
+		
+	System.out.println(Renault.dime_peso_total());
+
+ }
+
+}
