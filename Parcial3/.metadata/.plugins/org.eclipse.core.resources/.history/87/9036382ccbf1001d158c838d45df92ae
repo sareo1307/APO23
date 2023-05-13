@@ -1,0 +1,11 @@
+package poo;
+
+public class Nave_lanzadera extends Nave {
+	
+	private int capacidad_carga;
+	
+	private int potencia_sistema_propulsion ;
+	
+	
+
+}

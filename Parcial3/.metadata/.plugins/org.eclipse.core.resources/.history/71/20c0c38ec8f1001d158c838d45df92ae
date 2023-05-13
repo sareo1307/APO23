@@ -1,0 +1,60 @@
+package poo;
+
+public class Nave {
+	
+	private int motores;
+	
+	private int alas;
+	
+	private int peso;
+	
+	private String cabina;
+	
+	private String propulsores;
+	
+public Nave(){
+	
+	motores = 1;
+	
+	alas = 2;
+	
+	peso = 2900;
+	
+}
+
+
+
+
+
+
+
+
+public void establecer_cabina(String cabina_Nave) {
+	
+	if(cabina_Nave == "si"){
+		
+		cabina_Nave = true;
+		
+	}else{
+				
+		cabina_Nave = false;
+		
+}
+}
+	
+public String dime_cabina(String cabina_Nave) {
+	
+	if (cabina_Nave == true) {
+		
+		return "El coche tiene asientos de cuero";
+		
+	}else{
+			
+		return "El coche tiene asientos de serie";
+				
+	 }
+	}
+	
+}
+
+
