@@ -130,15 +130,40 @@ private static void CrearNave() {
 	
 	
 private static void BuscarNave() {
-	
-	Scanner scanner = new Scanner(System.in); 
-		
-	System.out.println("Ingrese el tipo de nave que quiere buscar (1, 2 o 3)");
-	
-	
-	
-	
-	
+        Scanner scanner = new Scanner(System.in);
 
-}
+        System.out.println("Ingrese el tipo de nave a buscar (1, 2 o 3):");
+        int tipoNave = scanner.nextInt();
+
+        if (tipoNave < 1 || tipoNave > 3) {
+            System.out.println("Tipo de nave inválido.");
+            return;
+        }
+
+        boolean naveEncontrada = false;
+
+        for (int i = 0; i < inventarioNaves.length; i++) {
+            Nave nave = inventarioNaves[i];
+            if (nave != null && nave instanceof NaveLanzadera && tipoNave == 1) {
+                naveEncontrada = true;
+                System.out.println("Nave encontrada en el inventario:");
+                System.out.println(((NaveLanzadera) nave).dime_datos_NaveLanzadera());
+                break;
+            } else if (nave != null && nave instanceof NaveNoTripulada && tipoNave == 2) {
+                naveEncontrada = true;
+                System.out.println("Nave encontrada en el inventario:");
+                System.out.println(((NaveNoTripulada) nave).dime_datos_NaveNoTripulada());
+                break;
+            } else if (nave != null && nave instanceof NaveTripulada && tipoNave == 3) {
+                naveEncontrada = true;
+                System.out.println("Nave encontrada en el inventario:");
+                System.out.println(((NaveTripulada) nave).dime_datos_NaveTripulada());
+                break;
+            }
+        }
+
+        if (!naveEncontrada) {
+            System.out.println("No se encontró ninguna nave del tipo especificado en el inventario.");
+        }
+    }
 }
