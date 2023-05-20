@@ -1,0 +1,120 @@
+package poo;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static Nave[] inventarioNaves;
+	
+public static void main(String[] args) {
+		
+	inventarioNaves = new Nave[9];
+	
+	Scanner sn = new Scanner(System.in);
+	
+		boolean terminar_programa = false;
+
+	    while (!terminar_programa) {
+	    	
+	    	System.out.println("Seleccione una opcion");
+	        System.out.println("1. Crear nave");
+	        System.out.println("2. Buscar nave");
+	        System.out.println("3. Terminar programa");
+	    
+	    	int opcion = sn.nextInt();
+	    		
+	    	switch (opcion) {
+	    	case 1:
+	   
+	    	CrearNave();
+	    	
+	    	break;
+	    	
+	    	case 2:
+	    	
+	    	BuscarNave();	
+	    		
+	    	break;
+	    	
+	    	case 3:
+	    	
+	    	terminar_programa = true;	
+	    		
+	    	break;
+	    	
+	    	default:
+	    	System.out.println("Solo números entre 1 y 3");
+	} 
+ }
+}
+
+private static void CrearNave() {
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("Ingrese el tipo de nave(1, 2 o 3)");
+	
+	int tipoNave = scanner.nextInt();
+	
+	if (tipoNave < 1 || tipoNave > 3) {
+		
+	System.out.println("Solo números entre 1 y 3");
+		
+	return;
+	}
+	
+	System.out.println("Ingrese la cantidad de naves que quiere crear");
+	
+	int cantidadNave = scanner.nextInt();
+	
+	for (int i = 0; i < cantidadNave; i ++) {
+		
+		Nave nuevaNave = null;
+		
+	switch (tipoNave) {
+	
+	case 1:	
+	
+		System.out.println("Ingrese la capacidad de carga");
+		int capacidad_carga = scanner.nextInt();
+		
+		System.out.println("Ingrese la potencia sistema propulsion");
+		int potencia_sistema_propulsion = scanner.nextInt();
+		
+		nuevaNave = new NaveLanzadera(capacidad_carga,potencia_sistema_propulsion);
+		
+		break;
+		
+		
+		
+	
+	
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+}

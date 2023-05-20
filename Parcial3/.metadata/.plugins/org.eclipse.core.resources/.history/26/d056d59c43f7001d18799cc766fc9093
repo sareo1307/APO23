@@ -30,18 +30,18 @@ public void establecer_cabina(String cabina_Nave) {
 	
 	if(cabina_Nave == "si"){
 		
-		this.cabina = true;
+		cabina_Nave = true;
 		
 	}else{
 				
-		this.cabina = false;
+		cabina_Nave = false;
 		
 }
 }
 	
 public String dime_cabina() {
 	
-	if (this.cabina == true) {
+	if (cabina_Nave == true) {
 		
 		return "La nave tiene cabina";
 		
@@ -56,18 +56,18 @@ public void establecer_propulsores(String propulsores_Nave) {
 
 	if(propulsores_Nave == "si"){
 		
-		this.propulsores = true;
+		propulsores_Nave = true;
 		
 	}else{
 				
-		this.propulsores = false;
+		propulsores_Nave = false;
 		
 }
 }
 	
 public String dime_propulsores() {
 	
-	if (this.propulsores == true) {
+	if (propulsores_Nave == true) {
 		
 		return "La nave tiene propulsores";
 		

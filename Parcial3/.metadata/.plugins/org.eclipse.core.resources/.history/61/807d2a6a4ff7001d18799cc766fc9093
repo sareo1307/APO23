@@ -6,6 +6,7 @@ public class NaveTripulada extends Nave {
 	
 	private int orbita;
 	
+
 public NaveTripulada(int numero_tripulantes, int orbita) {
 
 	super();
